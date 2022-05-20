@@ -1,0 +1,14 @@
+/node_modules
+
+/public/sitemap.xml
+/public/sitemap-0.xml
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+.env.development
+.env.production
+

@@ -1,0 +1,4 @@
+node_modules
+src/__test__
+Dockerfile
+.dockerignore

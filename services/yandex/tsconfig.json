@@ -1,0 +1,22 @@
+{
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "outDir": "build",
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "lib": ["ESNext"]
+  },
+  "include": [
+    "./src",
+    "./yadisk.d.ts"
+  ],
+  "exclude": [
+    "./node_modules"
+  ],
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true
+  }
+}

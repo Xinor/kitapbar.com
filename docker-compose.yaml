@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+
+  client:
+    build: ./services/client
+    restart: always
+    networks:
+      - kitapbar-net
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:3000" ]
+      interval: 10s
+      timeout: 5s
+    ports:
+      - "3000:3000"
+
+  mongo:
+    container_name: 'mongo'
+    image: mongo
+    restart: always
+    expose:
+      - '27017'
+    ports:
+      - '27017:27017'
+    volumes:
+      - db:/data/db
+    networks:
+      - kitapbar-net
+    env_file:
+      - ./.env.db
+
+  yandex:
+    build: ./services/yandex
+    restart: always
+    networks:
+      - kitapbar-net
+    expose:
+      - "3002"
+    ports:
+      - "3002:3002"
+    deploy:
+      resources:
+        limits:
+          memory: 1024M
+
+volumes:
+  db:
+
+networks:
+  kitapbar-net:
+    driver: bridge
+
+

@@ -1,0 +1,38 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "author": "Xinor",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "next-sitemap",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "next": "12.1.6",
+    "next-themes": "^0.2.0",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-hook-form": "^7.31.1",
+    "react-icons": "^4.3.1",
+    "react-query": "^3.39.0",
+    "react-share": "^4.4.0",
+    "react-toastify": "^9.0.1",
+    "sharp": "^0.30.4",
+    "urlencode": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.35",
+    "@types/react": "18.0.9",
+    "@types/react-dom": "18.0.4",
+    "@types/urlencode": "^1.1.2",
+    "autoprefixer": "^10.4.7",
+    "next-sitemap": "^2.5.20",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24",
+    "typescript": "4.6.4"
+  }
+}

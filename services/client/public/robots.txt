@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://kitapbar.com/
+
+# Sitemaps
+Sitemap: https://kitapbar.com/sitemap.xml

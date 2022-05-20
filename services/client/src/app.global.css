@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #067cab;
+  --secondary: rgb(110, 118, 127);
+  --bg: #FFFFFF;
+  --bgs: #eefaff;
+  --link: #315399;
+}
+
+[data-theme='dark'] {
+  --primary: #FFFFFF;
+  --secondary: rgba(255, 255, 255, 0.5);
+  --bg: #282d2d;
+  --bgs: rgb(51, 56, 56);
+  --link: rgb(40, 127, 166);
+}
+
+[data-theme='mystique'] {
+  --primary: #ff6a3d;
+  --secondary: #9daaf2;
+  --bg: #1a2238;
+  --bgs: #161c2f;
+  --link: rgb(40, 127, 166);
+}
+
+[data-theme='stitch'] {
+  --primary: #ff00dd;
+  --secondary: #e1e2e2;
+  --bg: #1d2228;
+  --bgs: #15191f;
+  --link: rgb(40, 127, 166);
+}
+
+[data-theme='red'] {
+  --primary: #791524;
+  --secondary: #725a62;
+  --bg: #1c1c1c;
+  --bgs: #0a0a0a;
+  --link: rgb(84, 110, 154);
+}
+
+html, body, #__next {
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg);
+}
+
+.Toastify__close-button {
+  color: var(--secondary);
+}
+
+@layer components {
+  .menu-item {
+    @apply cursor-pointer text-secondary whitespace-nowrap text-[9px] md:text-[10px] lg:text-[12px] flex items-center justify-center px-2 md:px-3 py-1.5 select-none;
+  }
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+  cursor: pointer;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: var(--bg);
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--bgs);
+  border-radius: 1px;
+  min-height: 30px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
