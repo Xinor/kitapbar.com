@@ -26,7 +26,6 @@ const softwares = [
   {name: 'axios', url: 'https://github.com/axios/axios'},
   {name: 'async', url: 'https://github.com/caolan/async'},
   {name: 'sharp', url: 'https://github.com/lovell/sharp'},
-  {name: 'urlencode', url: 'https://github.com/node-modules/urlencode'},
   {name: 'next-sitemap', url: 'https://github.com/iamvishnusankar/next-sitemap'},
   {name: 'postcss', url: 'https://github.com/postcss/postcss'},
   {name: 'autoprefixer', url: 'https://github.com/postcss/autoprefixer'},
