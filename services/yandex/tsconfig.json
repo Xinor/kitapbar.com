@@ -9,8 +9,7 @@
     "lib": ["ESNext"]
   },
   "include": [
-    "./src",
-    "./yadisk.d.ts"
+    "./src"
   ],
   "exclude": [
     "./node_modules"
@@ -18,5 +17,8 @@
   "ts-node": {
     "transpileOnly": true,
     "files": true
-  }
+  },
+  "files": [
+    "./yadisk.d.ts"
+  ]
 }
