@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-interface IVerification extends mongoose.Document {
+interface IVerification {
   email: string;
   code: string;
   createdAt: Date;

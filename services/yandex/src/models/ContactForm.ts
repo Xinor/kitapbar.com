@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-interface IContactForm extends mongoose.Document {
+interface IContactForm {
   userId: mongoose.ObjectId;
   email: string;
   title: string;

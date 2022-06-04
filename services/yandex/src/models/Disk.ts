@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-interface IDisk extends mongoose.Document {
+interface IDisk {
   public_url: string;
   public_key: string;
   name: string;

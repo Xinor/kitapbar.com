@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-interface IBook extends mongoose.Document {
+interface IBook {
   mediaType: string;
   antivirusStatus: 'clean' | 'unknown';
   size: number;

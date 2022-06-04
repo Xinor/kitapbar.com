@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-interface IDownload extends mongoose.Document {
+interface IDownload {
   bookId: mongoose.ObjectId;
   userId: mongoose.ObjectId;
   createdAt: Date;

@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-interface IUser extends mongoose.Document {
+interface IUser {
   email: string;
   hash: string;
   registerAt: Date;
