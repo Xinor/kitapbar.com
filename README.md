@@ -2,12 +2,37 @@
 
 ## Development
 
-* start mongodb server
-
+1. start mongodb server
 ```bash
 docker-compose -f docker-compose.dev.yaml up -d
-cd services/yandex && yarn dev
-cd services/client && yarn dev
+```
+
+2. yandex service
+```bash
+cd services/yandex
+```
+* create a .env file by copying and adjusting .env.example
+```bash
+cp .env.example .env
+```
+* download packages and start yandex service
+```bash
+yarn
+yarn dev
+```
+
+3. client
+```bash
+cd services/client
+```
+* create a .env.development file by copying and adjusting .env.example
+```bash
+cp .env.example .env.development
+```
+* download packages and start client
+```bash
+yarn
+yarn dev
 ```
 
 ## Contributing
