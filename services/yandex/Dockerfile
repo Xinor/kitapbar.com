@@ -1,11 +1,11 @@
-FROM node:17 AS builder
+FROM node:18.3.0-buster-slim AS builder
 WORKDIR /builder
 COPY ./package.json ./yarn.lock ./
 RUN ["yarn", "install"]
 COPY . .
 RUN ["yarn", "build"]
 
-FROM node:17
+FROM node:18.3.0-buster-slim
 WORKDIR /usr/src/app
 COPY --from=builder /builder/build .
 ENV NODE_ENV production
