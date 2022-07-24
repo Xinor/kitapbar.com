@@ -35,6 +35,9 @@ yarn
 yarn dev
 ```
 
+### web pages/links where you can find yandex disk links
+* https://eksisozluk.com/somurulesi-e-kitap-siteleri--1687482?a=nice
+
 ## Contributing
 
 Please feel free to contribute. For new features, first open an issue to discuss what you want.
